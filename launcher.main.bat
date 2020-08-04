@@ -1,4 +1,6 @@
 @echo off
+::change "C:\MainGame\FarCry4\bin" to where the game's exe is located (FarCry4.exe)
+set maingame=C:\MainGame\FarCry4\bin
 
 ::aesthetics purposes (delete these if you don't want them)
 echo  _____     ______    __  __    
@@ -36,10 +38,9 @@ echo ------------------------------
 
 start restore.bat
 
-pause >nul|(echo Press any key to start Far Cry 4...)
+pause >nul|(echo "Press any key to start Far Cry 4...")
 
-::change "C:\Games\Far Cry 4\bin" to where FarCry4.exe is located
-cd C:\Games\Far Cry 4\bin
+cd %maingame%
 ::remove -skipintro if you want intro
 start FarCry4.exe -skipintro
 
