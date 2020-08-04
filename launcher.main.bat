@@ -36,7 +36,7 @@ echo ------------------------------
 
 start restore.bat
 
-pause >nul|(echo "Press any key to start Far Cry 4...")
+pause >nul|(echo Press any key to start Far Cry 4...)
 
 ::change "C:\Games\Far Cry 4\bin" to where FarCry4.exe is located
 cd C:\Games\Far Cry 4\bin
