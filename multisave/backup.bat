@@ -11,15 +11,6 @@ if %lastsave%==1 (goto backup_1)
 if %lastsave%==2 (goto backup_2)
 if %lastsave%==3 (goto backup_3) else exit
 
-::in my case the batch files are in the main saves directory so specifying the files is necessary
-::so if you're annoyed by that, replace all copy command with the command below
-::for backup_1
-::xcopy "%backupsave1%" "%mainsave%" /y /i
-::for backup_2
-::xcopy "%backupsave2%" "%mainsave%" /y /i
-::for backup_3
-::xcopy "%backupsave3%" "%mainsave%" /y /i
-
 :backup_1
 xcopy "%mainsave%\*.save" "%backupsave1%" /y /i
 goto exit
