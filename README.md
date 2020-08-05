@@ -1,5 +1,5 @@
 # Far Cry 4 MultiSave Launcher
-A "launcher" for Far Cry 4 that automatically backup saves and lets you choose which save file to play before launching the game. Supports up to 3 saves, though you can add more if you want.
+A "launcher" for Far Cry 4 (and possibly other games as well) that automatically backup saves and lets you choose which save file to play before launching the game. Supports up to 3 saves, though you can add more if you want.
 
 NOTE #1: This is designed as a standard save manager just like in Far Cry 3 so it overwrites the previous loaded backup save after you played on it. The overwriting/backup occurs when you open up the launcher.main.bat again)
 
