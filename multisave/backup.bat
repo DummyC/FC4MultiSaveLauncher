@@ -21,18 +21,15 @@ if %lastsave%==3 (goto backup_3) else exit
 ::xcopy "%backupsave3%" "%mainsave%" /y /i
 
 :backup_1
-xcopy "%mainsave%\1.save" "%backupsave1%" /y /i
-xcopy "%mainsave%\2.save" "%backupsave1%" /y /i
+xcopy "%mainsave%\*.save" "%backupsave1%" /y /i
 goto exit
 
 :backup_2
-xcopy "%mainsave%\1.save" "%backupsave2%" /y /i
-xcopy "%mainsave%\2.save" "%backupsave2%" /y /i
+xcopy "%mainsave%\*.save" "%backupsave2%" /y /i
 goto exit
 
 :backup_3
-copy "%mainsave%\1.save" "%backupsave3%" /y /i
-copy "%mainsave%\2.save" "%backupsave3%" /y /i
+xcopy "%mainsave%\*.save" "%backupsave3%" /y /i
 goto exit
 
 :exit
